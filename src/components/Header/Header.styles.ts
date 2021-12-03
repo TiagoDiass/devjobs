@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
   background-image: url('/images/mobile/bg-pattern-header.svg');
-  height: 9rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10rem;
   padding: 2rem 1rem;
 `;
 

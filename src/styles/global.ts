@@ -24,6 +24,7 @@ const globalStyles = createGlobalStyle`
 
   body {
     font-family: ${({ theme }) => theme.fonts.default};
+    background-color: ${(p) => p.theme.colors.whiteDarker};
   }
 `;
 
