@@ -1,3 +1,4 @@
+import { Header } from 'components';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles, theme } from 'styles';
 
@@ -11,6 +12,7 @@ export default function App({ Component, pageProps }) {
       <ThemeProvider theme={theme}>
         <GlobalStyles />
 
+        <Header />
         <Component {...pageProps} />
       </ThemeProvider>
     </>

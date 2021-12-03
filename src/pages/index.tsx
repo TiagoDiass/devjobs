@@ -7,7 +7,6 @@ export default function Home() {
       <Head>
         <title>Devjobs | Find your new developer job</title>
       </Head>
-      <Header />
       <h1>My page</h1>;
     </>
   );
