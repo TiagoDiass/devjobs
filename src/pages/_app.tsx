@@ -1,24 +1,16 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyles, theme } from 'styles';
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-`;
-
-const theme = {
-  colors: {
-    primary: '#0070f3',
-  },
-};
-
+/**
+ * @component App - Next.js root component
+ */
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <GlobalStyle />
+      {/* Configuração padrão do Styled Components para utilizar com Next.js */}
       <ThemeProvider theme={theme}>
+        <GlobalStyles />
+
         <Component {...pageProps} />
       </ThemeProvider>
     </>
