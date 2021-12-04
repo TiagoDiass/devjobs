@@ -6,9 +6,16 @@ export const HeaderContainer = styled.header`
   background-size: cover;
   height: 10rem;
   padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
 `;
 
 export const Logo = styled.h1`
   color: ${(p) => p.theme.colors.white};
   font-size: 2.2rem;
+`;
+
+export const HeaderContent = styled.div`
+  max-width: 1440px;
+  width: 100%;
 `;
