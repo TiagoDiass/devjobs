@@ -4,8 +4,12 @@ import { JobBlock } from 'components';
 import { Layout, Spacing } from 'styles/layout-components';
 import Head from 'next/head';
 import jobs from 'mocks/jobs';
+import { useTheme } from 'styled-components';
 
 export default function Home() {
+  // const theme = useTheme();
+  // console.log(theme);
+
   return (
     <Layout>
       <Head>
