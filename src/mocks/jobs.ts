@@ -1,8 +1,10 @@
-export default [
+import { Job } from 'types/Job';
+
+const jobs: Job[] = [
   {
     id: 1,
     company: 'Scoot',
-    logo: './assets/logos/scoot.svg',
+    logo: 'scoot.svg',
     logoBackground: 'hsl(36, 87%, 49%)',
     position: 'Senior Software Engineer',
     postedAt: '5h ago',
@@ -36,7 +38,7 @@ export default [
   {
     id: 2,
     company: 'Blogr',
-    logo: './assets/logos/blogr.svg',
+    logo: 'blogr.svg',
     logoBackground: 'hsl(12, 79%, 52%)',
     position: 'Haskell and PureScript Dev',
     postedAt: '20h ago',
@@ -70,7 +72,7 @@ export default [
   {
     id: 3,
     company: 'Vector',
-    logo: './assets/logos/vector.svg',
+    logo: 'vector.svg',
     logoBackground: 'hsl(235, 10%, 23%)',
     position: 'Midlevel Back End Engineer',
     postedAt: '1d ago',
@@ -103,7 +105,7 @@ export default [
   {
     id: 4,
     company: 'Office Lite',
-    logo: './assets/logos/officelite.svg',
+    logo: 'officelite.svg',
     logoBackground: 'hsl(227, 62%, 48%)',
     position: 'Senior Application Engineer',
     postedAt: '2d ago',
@@ -138,7 +140,7 @@ export default [
   {
     id: 5,
     company: 'Pod',
-    logo: './assets/logos/pod.svg',
+    logo: 'pod.svg',
     logoBackground: 'hsl(216, 46%, 14%)',
     position: 'Remote DevOps Engineer',
     postedAt: '2d ago',
@@ -177,7 +179,7 @@ export default [
   {
     id: 6,
     company: 'Creative',
-    logo: './assets/logos/creative.svg',
+    logo: 'creative.svg',
     logoBackground: 'hsl(295, 55%, 21%)',
     position: 'Desktop Support Manager',
     postedAt: '4d ago',
@@ -214,7 +216,7 @@ export default [
   {
     id: 7,
     company: 'Pomodoro',
-    logo: './assets/logos/pomodoro.svg',
+    logo: 'pomodoro.svg',
     logoBackground: 'hsl(254, 71%, 45%)',
     position: 'iOS Engineer',
     postedAt: '1w ago',
@@ -248,7 +250,7 @@ export default [
   {
     id: 8,
     company: 'Maker',
-    logo: './assets/logos/maker.svg',
+    logo: 'maker.svg',
     logoBackground: 'hsl(218, 58%, 31%)',
     position: 'Senior EJB Developer',
     postedAt: '1w ago',
@@ -282,7 +284,7 @@ export default [
   {
     id: 9,
     company: 'Coffeeroasters',
-    logo: './assets/logos/coffeeroasters.svg',
+    logo: 'coffeeroasters.svg',
     logoBackground: 'hsl(29, 60%, 87%)',
     position: 'Senior Frontend Developer',
     postedAt: '1w ago',
@@ -316,7 +318,7 @@ export default [
   {
     id: 10,
     company: 'Mastercraft',
-    logo: './assets/logos/mastercraft.svg',
+    logo: 'mastercraft.svg',
     logoBackground: 'hsl(0, 0%, 12%)',
     position: 'App & Website Designer',
     postedAt: '2w ago',
@@ -352,7 +354,7 @@ export default [
   {
     id: 11,
     company: 'Crowdfund',
-    logo: './assets/logos/crowdfund.svg',
+    logo: 'crowdfund.svg',
     logoBackground: 'hsl(157, 57%, 50%)',
     position: 'Fullstack Developer',
     postedAt: '1mo ago',
@@ -388,7 +390,7 @@ export default [
   {
     id: 12,
     company: 'Typemaster',
-    logo: './assets/logos/typemaster.svg',
+    logo: 'typemaster.svg',
     logoBackground: 'hsl(22, 89%, 52%)',
     position: 'Technical Lead Engineer',
     postedAt: '1mo ago',
@@ -423,7 +425,7 @@ export default [
   {
     id: 13,
     company: 'Crowdfund',
-    logo: './assets/logos/crowdfund.svg',
+    logo: 'crowdfund.svg',
     logoBackground: 'hsl(157, 57%, 50%)',
     position: 'Front-end Developer',
     postedAt: '1mo ago',
@@ -458,7 +460,7 @@ export default [
   {
     id: 14,
     company: 'Coffeeroasters',
-    logo: './assets/logos/coffeeroasters.svg',
+    logo: 'coffeeroasters.svg',
     logoBackground: 'hsl(29, 60%, 87%)',
     position: 'Junior Full-Stack Developer',
     postedAt: '1mo ago',
@@ -493,7 +495,7 @@ export default [
   {
     id: 15,
     company: 'Blogr',
-    logo: './assets/logos/blogr.svg',
+    logo: 'blogr.svg',
     logoBackground: 'hsl(12, 79%, 52%)',
     position: 'Midweight Front-end Developer',
     postedAt: '1mo ago',
@@ -525,3 +527,5 @@ export default [
     },
   },
 ];
+
+export default jobs;

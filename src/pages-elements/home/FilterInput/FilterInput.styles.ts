@@ -4,7 +4,7 @@ export const FilterInputContainer = styled.div`
   margin-top: -40px;
   height: 80px;
   background-color: ${(p) => p.theme.colors.white};
-  border-radius: 8px;
+  border-radius: ${(p) => p.theme.borderRadius};
   padding: 1rem 1.2rem;
 
   display: grid;
@@ -18,7 +18,7 @@ export const FilterInputContainer = styled.div`
     align-self: center;
   }
 
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: ${(p) => p.theme.boxShadow};
 `;
 
 export const FilterInput = styled.input`
@@ -32,7 +32,7 @@ export const FilterInput = styled.input`
 export const FilterButton = styled.button`
   background-color: ${(p) => p.theme.colors.primary};
   border: none;
-  border-radius: 8px;
+  border-radius: ${(p) => p.theme.borderRadius};
   cursor: pointer;
   transition: all 0.2s ease;
 
