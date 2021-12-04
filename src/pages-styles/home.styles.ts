@@ -5,12 +5,12 @@ export const JobsListContainer = styled.main`
   grid-template-columns: 1fr;
   row-gap: 3.5rem;
 
-  @media (min-width: 960px) {
+  @media (min-width: ${(p) => p.theme.mediaQueries.medium}) {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1rem;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: ${(p) => p.theme.mediaQueries.large}) {
     grid-template-columns: repeat(3, 1fr);
   }
 `;

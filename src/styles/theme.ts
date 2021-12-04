@@ -17,4 +17,9 @@ export default {
 
   borderRadius: '8px',
   boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',
+
+  mediaQueries: {
+    medium: '960px',
+    large: '1280px',
+  },
 } as const;
