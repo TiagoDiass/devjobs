@@ -1,8 +1,9 @@
-import Head from 'next/head';
-import FilterInput from 'pages-elements/home/FilterInput/FilterInput';
-import { Layout, Spacing } from 'styles/layout-components';
-import jobs from 'mocks/jobs';
+import * as S from 'pages-styles/home.styles';
+import { FilterInput } from 'pages-elements/home';
 import { JobBlock } from 'components';
+import { Layout, Spacing } from 'styles/layout-components';
+import Head from 'next/head';
+import jobs from 'mocks/jobs';
 
 export default function Home() {
   return (
@@ -14,12 +15,11 @@ export default function Home() {
 
       <Spacing space='x-large' />
 
-      {jobs.map((job) => (
-        <div key={job.id}>
-          <JobBlock job={job} />
-          <Spacing space='x-large' />
-        </div>
-      ))}
+      <S.JobsListContainer>
+        {jobs.map((job) => (
+          <JobBlock job={job} key={job.id} />
+        ))}
+      </S.JobsListContainer>
     </Layout>
   );
 }
