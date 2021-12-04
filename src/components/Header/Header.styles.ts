@@ -8,6 +8,10 @@ export const HeaderContainer = styled.header`
   padding: 2rem 1rem;
   display: flex;
   justify-content: center;
+
+  @media (min-width: ${(p) => p.theme.mediaQueries.medium}) {
+    border-end-start-radius: 6rem;
+  }
 `;
 
 export const Logo = styled.h1`
