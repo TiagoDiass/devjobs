@@ -1,13 +1,9 @@
-import jobs from 'mocks/jobs';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { Job } from 'types/Job';
-
-type JobDetailsProps = {
-  job: Job;
-};
+import JobDetailsTemplate, { JobDetailsProps } from 'templates/JobDetails/JobDetails';
+import jobs from 'mocks/jobs';
 
 export default function JobDetails({ job }: JobDetailsProps) {
-  return <div>{job.position}</div>;
+  return <JobDetailsTemplate job={job} />;
 }
 
 export const getStaticPaths: GetStaticPaths<{ id: string }> = () => {
