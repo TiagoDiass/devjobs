@@ -20,6 +20,8 @@ export default function HomeTemplate() {
           <JobBlock job={job} key={job.id} />
         ))}
       </S.JobsListContainer>
+
+      <Spacing space='large' />
     </Layout>
   );
 }
