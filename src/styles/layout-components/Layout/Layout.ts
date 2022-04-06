@@ -5,7 +5,7 @@ import styled from 'styled-components';
  */
 const Layout = styled.div`
   padding: 0 2rem;
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
 `;
 

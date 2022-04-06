@@ -40,13 +40,13 @@ export const JobContent = styled.div`
   .position {
     color: ${(p) => p.theme.colors.secondary};
     font-weight: 900;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-decoration: none;
   }
 
   .secondary {
     color: ${(p) => p.theme.colors.darkGray};
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .location {

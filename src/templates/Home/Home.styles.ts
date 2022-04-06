@@ -7,7 +7,7 @@ export const JobsListContainer = styled.main`
 
   @media (min-width: ${(p) => p.theme.mediaQueries.medium}) {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 1rem;
+    column-gap: 1.5rem;
   }
 
   @media (min-width: ${(p) => p.theme.mediaQueries.large}) {
