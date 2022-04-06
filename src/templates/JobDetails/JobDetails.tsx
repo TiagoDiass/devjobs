@@ -30,8 +30,11 @@ export default function JobDetailsTemplate({ job }: JobDetailsProps) {
           </S.CompanyLogo>
 
           <S.JobDetailsHeaderContent>
-            <p className='company'>{job.company}</p>
-            <p className='website'>{job.website}</p>
+            <div className='job-data'>
+              <p className='company'>{job.company}</p>
+              <p className='website'>{job.website}</p>
+            </div>
+
             <a
               className='website-button'
               href={job.website}

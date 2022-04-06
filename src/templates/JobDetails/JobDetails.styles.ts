@@ -29,6 +29,13 @@ export const JobDetailsHeader = styled.header`
   flex-direction: column;
   align-items: center;
   margin-top: -20px;
+
+  @media (min-width: ${(p) => p.theme.mediaQueries.medium}) {
+    height: 10rem;
+    flex-direction: row;
+    column-gap: 2.5rem;
+    padding-left: 0;
+  }
 `;
 
 type CompanyLogoParams = {
@@ -48,6 +55,15 @@ export const CompanyLogo = styled.div<CompanyLogoParams>`
 
   position: absolute;
   top: -2rem;
+
+  @media (min-width: ${(p) => p.theme.mediaQueries.medium}) {
+    position: static;
+    width: 25%;
+    height: 10rem;
+    border-radius: ${(p) => p.theme.borderRadius};
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 `;
 
 export const JobDetailsHeaderContent = styled.header`
@@ -57,16 +73,20 @@ export const JobDetailsHeaderContent = styled.header`
   flex-direction: column;
   row-gap: 1rem;
 
+  .job-data {
+    text-align: center;
+  }
+
   .company {
     color: ${(p) => p.theme.colors.secondary};
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     text-decoration: none;
   }
 
   .website {
     color: ${(p) => p.theme.colors.darkGray};
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .website-button {
@@ -77,13 +97,23 @@ export const JobDetailsHeaderContent = styled.header`
     padding: 1rem 1.5rem;
     border-radius: 6px;
     background-color: rgba(89, 100, 224, 0.1);
-    font-weight: 700;
+    font-weight: 600;
     color: ${(p) => p.theme.colors.primary};
 
     transition: all 0.2s ease;
 
     &:hover {
       background-color: rgba(89, 100, 224, 0.2);
+    }
+  }
+
+  @media (min-width: ${(p) => p.theme.mediaQueries.medium}) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .job-data {
+      text-align: left;
     }
   }
 `;
