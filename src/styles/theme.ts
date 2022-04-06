@@ -19,6 +19,8 @@ export default {
   boxShadow: 'rgba(149, 157, 165, 0.2) 0px 4px 24px',
 
   mediaQueries: {
+    xsmall: '530px',
+    small: '640px',
     medium: '960px',
     large: '1280px',
   },
