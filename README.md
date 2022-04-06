@@ -26,7 +26,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;![](screenshots/devjobs.gif)
 
 <h2 align="center">
-  <a href="https://south-frontend-challenge.vercel.app/" target="_blank">
+  <a href="https://devjobs-tiago.vercel.app/" target="_blank">
     Demo on Vercel
   </a>
 </h2>
@@ -35,7 +35,7 @@
   :clipboard: Final result
 </h2>
 
-### [Click here to check the application running on Vercel](https://south-frontend-challenge.vercel.app/)
+### [Click here to check the application running on Vercel](https://devjobs-tiago.vercel.app/)
 
 <h2 id="techonologies" name="technologies">
   :rocket: Used technologies
@@ -50,7 +50,7 @@
 </h2>
 
 I have deployed this application on [Vercel](https://vercel.com/). It's configured with a continuous deployment with this Github repository, that is, everytime the codebase from the `main` branch of this repository gets updated, Vercel will trigger a build of the project and will put it in production.
-[Click here to check the application running on Vercel](https://south-frontend-challenge.vercel.app/)
+[Click here to check the application running on Vercel](https://devjobs-tiago.vercel.app/)
 
 <h2 id="features" name="features">
   :clipboard: Features
