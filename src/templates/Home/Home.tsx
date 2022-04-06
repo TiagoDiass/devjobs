@@ -2,10 +2,14 @@ import * as S from './Home.styles';
 import { JobBlock } from 'components';
 import { Layout, Spacing } from 'styles/layout-components';
 import FilterInput from './Elements/FilterInput/FilterInput';
-import jobs from 'mocks/jobs';
 import Head from 'next/head';
+import { Job } from 'types/Job';
 
-export default function HomeTemplate() {
+export type HomeTemplateProps = {
+  jobs: Job[];
+};
+
+export default function HomeTemplate({ jobs }: HomeTemplateProps) {
   return (
     <Layout>
       <Head>
