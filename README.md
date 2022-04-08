@@ -1,4 +1,3 @@
-
 <h1 align="center">
   💼 DevJobs 👨‍💻
 </h1>
@@ -27,7 +26,7 @@
 
 <h2 align="center">
   <a href="https://devjobs-tiago.vercel.app/" target="_blank">
-    Demo on Vercel
+    <img alt="Demo on Vercel" src="./screenshots/demo-on-vercel.png" />
   </a>
 </h2>
 
@@ -41,7 +40,7 @@
   :rocket: Used technologies
 </h2>
 
-- [Next.js](https://nextjs.org/)- Next.js is a framework built on top of React. It was used to build the app in general. 
+- [Next.js](https://nextjs.org/)- Next.js is a framework built on top of React. It was used to build the app in general.
 - [TypeScript](https://www.typescriptlang.org/) - Typescript is a superset of the common JavaScript. With that, we can type and maintain our code easier.
 - [Styled Components](https://styled-components.com/) - Styled components is a CSS-in-JS library. It was used to style the whole app.
 
@@ -60,14 +59,15 @@ I have deployed this application on [Vercel](https://vercel.com/). It's configur
 - [x] All the pages were developed using the [Mobile First](https://medium.com/@Vincentxia77/what-is-mobile-first-design-why-its-important-how-to-make-it-7d3cf2e29d00) concept, that is, all pages were firstly developed to the screen sizes of mobile devices, and then had their styles adapted to larger screen sizes. In short, the application is responsive.
 - [x] User can see a list of job positions
 - [x] User can enter in each job position page to check its details
+- [x] User can change the application's theme, choosing between a light or a dark theme
 - [ ] User can filter jobs
-- [ ] User can change the application's theme, choosing between a light or a dark theme
 
 <h2 id="how-to-run" name="how-to-run">
   :arrow_forward: How to run
 </h2>
 
 ### First steps
+
 If you want to run the application in your computer, follow these steps;
 First of all, you'll need to clone the repository and install the dependencies. Assuming you have [Yarn](https://yarnpkg.com/) installed in your computer, follow the steps bellow:
 
@@ -95,5 +95,3 @@ Hope you enjoyed this project :smiley:<br>
 :wave: [Get in touch!](https://www.linkedin.com/in/tiagodiass)
 
 ### Author: [Tiago Dias](https://tiagodiass.github.io)
-
-
