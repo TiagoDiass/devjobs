@@ -182,7 +182,7 @@ export const ApplyButton = styled.a`
     text-align: center;
     padding: 1rem;
 
-    color: ${theme.colors.white};
+    color: #fff;
     font-weight: 600;
     font-size: 1.05rem;
     text-decoration: none;

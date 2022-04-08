@@ -1,4 +1,4 @@
-export default {
+const light = {
   colors: {
     primary: '#5964E0',
     primaryLighter: '#939BF4',
@@ -25,3 +25,22 @@ export default {
     large: '1280px',
   },
 } as const;
+
+const dark = {
+  ...light,
+
+  boxShadow: '0',
+
+  colors: {
+    primary: '#5964E0',
+    primaryLighter: '#939BF4',
+    white: '#19202D',
+    whiteDarker: '#121721',
+    secondary: '#fff',
+    secondaryDarker: '#f9f9f9',
+    gray: '#9DAEC2',
+    darkGray: '#6E8098',
+  },
+} as const;
+
+export { light, dark };
