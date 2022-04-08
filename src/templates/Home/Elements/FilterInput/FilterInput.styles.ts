@@ -22,6 +22,7 @@ export const FilterInputContainer = styled.div`
 `;
 
 export const FilterInput = styled.input`
+  background: ${(p) => p.theme.colors.white};
   font-size: 1.1rem;
   font-family: ${(p) => p.theme.fonts.default};
   border: none;

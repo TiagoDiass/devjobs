@@ -15,7 +15,7 @@ export const HeaderContainer = styled.header`
 `;
 
 export const Logo = styled.h1`
-  color: ${(p) => p.theme.colors.white};
+  color: #fff;
   font-size: 2rem;
   cursor: pointer;
 `;
