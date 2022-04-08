@@ -1,84 +1,99 @@
-# Example app with styled-components
 
-This example features how you use a different styling solution than [styled-jsx](https://github.com/vercel/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
+<h1 align="center">
+  💼 DevJobs 👨‍💻
+</h1>
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
+<h4 align="center">
+  A front-end challenge developed by <a href='https://github.com/TiagoDiass'>@TiagoDiass</a> where people can look for technology related Jobs
+</h4>
 
-## Preview
+<p align="center">
+  <img alt="Repo's top languages" src="https://img.shields.io/static/v1?label=Main%20technologies&message=React%2FNext.js%2FTypeScript&style=for-the-badge&color=2b7489&labelColor=000000">
+</p>
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+<p align="center">
+  <a href="#final-result">Final result</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#technologies">Used technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#deploy">Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#how-to-run">How to run</a>
+</p>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-styled-components)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;![](screenshots/devjobs.gif)
 
-## Deploy your own
+<h2 align="center">
+  <a href="https://devjobs-tiago.vercel.app/" target="_blank">
+    Demo on Vercel
+  </a>
+</h2>
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+<h2 id="final-result" name="final-result">
+  :clipboard: Final result
+</h2>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components&project-name=with-styled-components&repository-name=with-styled-components)
+### [Click here to check the application running on Vercel](https://devjobs-tiago.vercel.app/)
 
-## How to use
+<h2 id="techonologies" name="technologies">
+  :rocket: Used technologies
+</h2>
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+- [Next.js](https://nextjs.org/)- Next.js is a framework built on top of React. It was used to build the app in general. 
+- [TypeScript](https://www.typescriptlang.org/) - Typescript is a superset of the common JavaScript. With that, we can type and maintain our code easier.
+- [Styled Components](https://styled-components.com/) - Styled components is a CSS-in-JS library. It was used to style the whole app.
 
-```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
+<h2 id="deploy" name="deploy">
+  :rocket: Deploy
+</h2>
+
+I have deployed this application on [Vercel](https://vercel.com/). It's configured with a continuous deployment with this Github repository, that is, everytime the codebase from the `main` branch of this repository gets updated, Vercel will trigger a build of the project and will put it in production.
+[Click here to check the application running on Vercel](https://devjobs-tiago.vercel.app/)
+
+<h2 id="features" name="features">
+  :clipboard: Features
+</h2>
+
+- [x] All the pages were statically generated, which improves the user experience since the page will load and be available to use very quickly.
+- [x] All the pages were developed using the [Mobile First](https://medium.com/@Vincentxia77/what-is-mobile-first-design-why-its-important-how-to-make-it-7d3cf2e29d00) concept, that is, all pages were firstly developed to the screen sizes of mobile devices, and then had their styles adapted to larger screen sizes. In short, the application is responsive.
+- [x] User can see a list of job positions
+- [x] User can enter in each job position page to check its details
+- [ ] User can filter jobs
+- [ ] User can change the application's theme, choosing between a light or a dark theme
+
+<h2 id="how-to-run" name="how-to-run">
+  :arrow_forward: How to run
+</h2>
+
+### First steps
+If you want to run the application in your computer, follow these steps;
+First of all, you'll need to clone the repository and install the dependencies. Assuming you have [Yarn](https://yarnpkg.com/) installed in your computer, follow the steps bellow:
+
+```
+# Clone the repo
+$ git clone https://github.com/TiagoDiass/devjobs.git
+
+# Enter the repo's folder
+$ cd devjobs
+
+# Install the dependencies
+$ yarn install
+
+# Start the application
+$ yarn dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+After following these steps, the terminal will show you in which port it's running, it's on the port 3000 usually, so, you'll just need to enter in your browser and
+type `localhost:3000`, then you'll be able to check the app running. When you want to stop it, go to the terminal that you used to start the app, and type <kbd>CTRL</kbd>+<kbd>C</kbd>,
+this way you'll stop the app
 
-### Try it on CodeSandbox
+---
 
-[Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
+Hope you enjoyed this project :smiley:<br>
+:wave: [Get in touch!](https://www.linkedin.com/in/tiagodiass)
 
-### Notes
+### Author: [Tiago Dias](https://tiagodiass.github.io)
 
-When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
 
-<details>
-<summary>Click to expand workaround example</summary>
-<br />
-
-**components/StyledLink.js**
-
-```javascript
-import Link from 'next/link'
-import styled from 'styled-components'
-
-const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
-    <a className={className}>{children}</a>
-  </Link>
-)
-
-export default styled(StyledLink)`
-  color: #0075e0;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    color: #40a9ff;
-  }
-
-  &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
-  }
-`
-```
-
-**pages/index.js**
-
-```javascript
-import StyledLink from '../components/StyledLink'
-
-export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
-    First post
-  </StyledLink>
-)
-```
-
-</details>
